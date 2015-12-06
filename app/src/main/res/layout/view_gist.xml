@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:minHeight="64dp"
+    >
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        />
+    <TextView
+        android:id="@+id/gist_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/avatar"
+        android:layout_margin="8dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        />
+    <TextView
+        android:id="@+id/gist_create_ago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/gist_title"
+        android:layout_alignRight="@id/gist_title"
+        android:layout_below="@id/gist_title"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        />
+    <TextView
+        android:id="@+id/gist_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/gist_title"
+        android:layout_alignRight="@id/gist_title"
+        android:layout_below="@id/gist_create_ago"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        />
+</merge>
